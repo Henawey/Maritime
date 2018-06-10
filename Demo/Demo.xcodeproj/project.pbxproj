@@ -20,6 +20,7 @@
 		DCED25A920CC43410015A011 /* SiteMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCED25A820CC43410015A011 /* SiteMap.plist */; };
 		DCED25AB20CC438F0015A011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED25AA20CC438F0015A011 /* HomeViewController.swift */; };
 		DCED25AD20CC439B0015A011 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED25AC20CC439B0015A011 /* LoginViewController.swift */; };
+		DCF4CD8220CC917D00ED9A50 /* SiteMapTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCF4CD8120CC917D00ED9A50 /* SiteMapTypes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		DCED25A820CC43410015A011 /* SiteMap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SiteMap.plist; sourceTree = "<group>"; };
 		DCED25AA20CC438F0015A011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DCED25AC20CC439B0015A011 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DCF4CD8120CC917D00ED9A50 /* SiteMapTypes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SiteMapTypes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				DCED25A820CC43410015A011 /* SiteMap.plist */,
+				DCF4CD8120CC917D00ED9A50 /* SiteMapTypes.plist */,
 				DCCB850920CC535600CD73F7 /* MaritimeSiteMap.swift */,
 			);
 			path = SiteMap;
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF4CD8220CC917D00ED9A50 /* SiteMapTypes.plist in Resources */,
 				DCE69AB320B9E0910080C0DF /* LaunchScreen.storyboard in Resources */,
 				DCE69AB020B9E0910080C0DF /* Assets.xcassets in Resources */,
 				DCED25A920CC43410015A011 /* SiteMap.plist in Resources */,

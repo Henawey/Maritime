@@ -4,23 +4,17 @@
 <dict>
 	<key>Login</key>
 	<dict>
-		<key>class</key>
-		<string>LoginViewController</string>
 		<key>canNavigateTo</key>
 		<dict>
-			<key>Home</key>
-			<dict>
-				<key>class</key>
-				<string>HomeViewController</string>
-				<key>canNavigateTo</key>
-				<dict>
-					<key>Login</key>
-					<dict>
-						<key>class</key>
-						<string>LoginViewController</string>
-					</dict>
-				</dict>
-			</dict>
+			<key>style</key>
+            <string>auto</string> <!-- navigate
+                                        if navigation controller presented otherwise, present,
+                                   present,
+                                   segue,
+                                   auto
+                                        check if there are a segue otherwise, auto select navigate or present if there are a navigation controller or not -->
+			<key>type</key>
+			<string>Home</string>
 		</dict>
 	</dict>
 </dict>
