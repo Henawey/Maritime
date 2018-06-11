@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Home</key>
+	<dict>
+		<key>class</key>
+		<string>HomeViewController</string>
+	</dict>
+	<key>DataReceiver</key>
+	<dict>
+		<key>class</key>
+		<string>DataReceiverViewController</string>
+		<key>inputs</key>
+		<dict>
+			<key>dataPassedFromHomeScreen</key>
+			<string>String</string>
+		</dict>
+	</dict>
+	<key>CustomDataReceiver</key>
+	<dict>
+		<key>class</key>
+		<string>CustomDataReceiverViewController</string>
+		<key>inputs</key>
+		<dict>
+			<key>selectedItemTitle</key>
+			<string>String</string>
+		</dict>
+		<key>dataReceiver</key>
+		<dict>
+			<key>class</key>
+			<string>CustomDataReceiverBusinessLogic</string>
+			<key>instance</key>
+			<string>interactor</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

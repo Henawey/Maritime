@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3si-D4-TK2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8xb-ML-IUT">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,17 +10,18 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Home-->
         <scene sceneID="dGL-wQ-fHv">
             <objects>
-                <viewController id="3si-D4-TK2" customClass="LoginViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aed-bs-PPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="HomeViewController" title="Home" id="3si-D4-TK2" customClass="HomeViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t4d-lv-z88">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdK-eN-DM3">
-                                <rect key="frame" x="164" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="118.5" y="579" width="137" height="30"/>
+                                <state key="normal" title="Show Data Receiver"/>
                                 <connections>
                                     <action selector="loginTouchUpInside:" destination="3si-D4-TK2" eventType="touchUpInside" id="cI1-5W-QKP"/>
                                 </connections>
@@ -29,28 +30,68 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hdK-eN-DM3" firstAttribute="centerX" secondItem="t4d-lv-z88" secondAttribute="centerX" id="4xD-G9-RRK"/>
-                            <constraint firstItem="hdK-eN-DM3" firstAttribute="centerY" secondItem="t4d-lv-z88" secondAttribute="centerY" id="wWu-E9-2yN"/>
+                            <constraint firstItem="VJC-rs-R7f" firstAttribute="bottom" secondItem="hdK-eN-DM3" secondAttribute="bottom" constant="58" id="Sg4-kX-rai"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VJC-rs-R7f"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="nma-Lc-Y71"/>
                     <connections>
-                        <segue destination="SL0-4f-6q0" kind="show" identifier="showHome" id="kpb-uM-cEu"/>
+                        <segue destination="SL0-4f-6q0" kind="show" identifier="showDataReceiver" id="kpb-uM-cEu"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Aed-bs-PPV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="80"/>
+            <point key="canvasLocation" x="876" y="79.610194902548727"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Data Receiver-->
         <scene sceneID="ND9-qq-5oq">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="SL0-4f-6q0" customClass="HomeViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DataReceiverViewController" title="Data Receiver" id="SL0-4f-6q0" customClass="DataReceiverViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="86P-Za-kaZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnm-Oh-nIR">
-                                <rect key="frame" x="164" y="323" width="46" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data Receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mnm-Oh-nIR">
+                                <rect key="frame" x="134" y="323" width="106.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds2-Ub-ubR">
+                                <rect key="frame" x="90" y="579" width="194" height="30"/>
+                                <state key="normal" title="Show Custom Data Receiver"/>
+                                <connections>
+                                    <action selector="nextTouchUpInside:" destination="SL0-4f-6q0" eventType="touchUpInside" id="o6R-cx-rcF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mnm-Oh-nIR" firstAttribute="centerX" secondItem="86P-Za-kaZ" secondAttribute="centerX" id="LyV-88-RlV"/>
+                            <constraint firstItem="Mnm-Oh-nIR" firstAttribute="centerY" secondItem="86P-Za-kaZ" secondAttribute="centerY" id="SbX-F1-kpY"/>
+                            <constraint firstItem="c5O-eK-BdE" firstAttribute="bottom" secondItem="ds2-Ub-ubR" secondAttribute="bottom" constant="58" id="f69-xd-Yj0"/>
+                            <constraint firstItem="ds2-Ub-ubR" firstAttribute="centerX" secondItem="86P-Za-kaZ" secondAttribute="centerX" id="wtr-jb-laf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c5O-eK-BdE"/>
+                    </view>
+                    <connections>
+                        <outlet property="receivedDataLabel" destination="Mnm-Oh-nIR" id="6RI-ts-efu"/>
+                        <segue destination="E05-52-t8K" kind="show" identifier="showCustomDataReceiver" id="T5U-Cr-hL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54P-QI-FxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1642" y="80"/>
+        </scene>
+        <!--Custom Data Receiver-->
+        <scene sceneID="mKm-G3-Jl1">
+            <objects>
+                <viewController title="Custom Data Receiver" id="E05-52-t8K" customClass="CustomDataReceiverViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o6U-vi-O3R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom Data Receiver" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obM-Zg-NM5">
+                                <rect key="frame" x="102" y="323" width="170" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -58,15 +99,36 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Mnm-Oh-nIR" firstAttribute="centerX" secondItem="86P-Za-kaZ" secondAttribute="centerX" id="LyV-88-RlV"/>
-                            <constraint firstItem="Mnm-Oh-nIR" firstAttribute="centerY" secondItem="86P-Za-kaZ" secondAttribute="centerY" id="SbX-F1-kpY"/>
+                            <constraint firstItem="obM-Zg-NM5" firstAttribute="centerX" secondItem="o6U-vi-O3R" secondAttribute="centerX" id="8SU-Hg-SxN"/>
+                            <constraint firstItem="obM-Zg-NM5" firstAttribute="centerY" secondItem="o6U-vi-O3R" secondAttribute="centerY" id="t7x-0U-ebF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="c5O-eK-BdE"/>
+                        <viewLayoutGuide key="safeArea" id="Bmc-PB-kaA"/>
                     </view>
+                    <connections>
+                        <outlet property="receivedDataLabel" destination="obM-Zg-NM5" id="1W0-99-k57"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="54P-QI-FxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laZ-eP-Ls1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="80"/>
+            <point key="canvasLocation" x="2425" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rWJ-JW-9wL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8xb-ML-IUT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Czt-Jn-6XR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3si-D4-TK2" kind="relationship" relationship="rootViewController" id="LCs-mU-SS7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKm-HS-Vqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="79.610194902548727"/>
         </scene>
     </scenes>
 </document>

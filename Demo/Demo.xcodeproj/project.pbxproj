@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCCB850A20CC535600CD73F7 /* MaritimeSiteMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB850920CC535600CD73F7 /* MaritimeSiteMap.swift */; };
+		DC436AAA20CF07DD006924C8 /* CustomDataReceiverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436AA420CF07DD006924C8 /* CustomDataReceiverPresenter.swift */; };
+		DC436AAB20CF07DD006924C8 /* CustomDataReceiverWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436AA520CF07DD006924C8 /* CustomDataReceiverWorker.swift */; };
+		DC436AAC20CF07DD006924C8 /* CustomDataReceiverRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436AA620CF07DD006924C8 /* CustomDataReceiverRouter.swift */; };
+		DC436AAD20CF07DD006924C8 /* CustomDataReceiverModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436AA720CF07DD006924C8 /* CustomDataReceiverModels.swift */; };
+		DC436AAE20CF07DD006924C8 /* CustomDataReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436AA820CF07DD006924C8 /* CustomDataReceiverViewController.swift */; };
+		DC436AAF20CF07DD006924C8 /* CustomDataReceiverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC436AA920CF07DD006924C8 /* CustomDataReceiverInteractor.swift */; };
+		DCCB850A20CC535600CD73F7 /* MaritimeNavMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCB850920CC535600CD73F7 /* MaritimeNavMap.swift */; };
 		DCE69AA920B9E0900080C0DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE69AA820B9E0900080C0DF /* AppDelegate.swift */; };
 		DCE69AAB20B9E0900080C0DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE69AAA20B9E0900080C0DF /* ViewController.swift */; };
 		DCE69AAE20B9E0900080C0DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE69AAC20B9E0900080C0DF /* Main.storyboard */; };
@@ -17,10 +23,10 @@
 		DCE69AC920B9E0910080C0DF /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE69AC820B9E0910080C0DF /* DemoUITests.swift */; };
 		DCE69AD820B9E0AE0080C0DF /* Maritime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCE69AD720B9E0AE0080C0DF /* Maritime.framework */; };
 		DCE69ADA20B9E0C90080C0DF /* Maritime.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCE69AD720B9E0AE0080C0DF /* Maritime.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DCED25A920CC43410015A011 /* SiteMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCED25A820CC43410015A011 /* SiteMap.plist */; };
-		DCED25AB20CC438F0015A011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED25AA20CC438F0015A011 /* HomeViewController.swift */; };
-		DCED25AD20CC439B0015A011 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED25AC20CC439B0015A011 /* LoginViewController.swift */; };
-		DCF4CD8220CC917D00ED9A50 /* SiteMapTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCF4CD8120CC917D00ED9A50 /* SiteMapTypes.plist */; };
+		DCED25A920CC43410015A011 /* NavMap.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCED25A820CC43410015A011 /* NavMap.plist */; };
+		DCED25AB20CC438F0015A011 /* DataReceiverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED25AA20CC438F0015A011 /* DataReceiverViewController.swift */; };
+		DCED25AD20CC439B0015A011 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCED25AC20CC439B0015A011 /* HomeViewController.swift */; };
+		DCF4CD8220CC917D00ED9A50 /* NavMapTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCF4CD8120CC917D00ED9A50 /* NavMapTypes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +60,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DCCB850920CC535600CD73F7 /* MaritimeSiteMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaritimeSiteMap.swift; sourceTree = "<group>"; };
+		DC436AA420CF07DD006924C8 /* CustomDataReceiverPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataReceiverPresenter.swift; sourceTree = "<group>"; };
+		DC436AA520CF07DD006924C8 /* CustomDataReceiverWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataReceiverWorker.swift; sourceTree = "<group>"; };
+		DC436AA620CF07DD006924C8 /* CustomDataReceiverRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataReceiverRouter.swift; sourceTree = "<group>"; };
+		DC436AA720CF07DD006924C8 /* CustomDataReceiverModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataReceiverModels.swift; sourceTree = "<group>"; };
+		DC436AA820CF07DD006924C8 /* CustomDataReceiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataReceiverViewController.swift; sourceTree = "<group>"; };
+		DC436AA920CF07DD006924C8 /* CustomDataReceiverInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataReceiverInteractor.swift; sourceTree = "<group>"; };
+		DCCB850920CC535600CD73F7 /* MaritimeNavMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaritimeNavMap.swift; sourceTree = "<group>"; };
 		DCE69AA520B9E0900080C0DF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE69AA820B9E0900080C0DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCE69AAA20B9E0900080C0DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,10 +81,10 @@
 		DCE69AC820B9E0910080C0DF /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
 		DCE69ACA20B9E0910080C0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE69AD720B9E0AE0080C0DF /* Maritime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Maritime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCED25A820CC43410015A011 /* SiteMap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SiteMap.plist; sourceTree = "<group>"; };
-		DCED25AA20CC438F0015A011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		DCED25AC20CC439B0015A011 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DCF4CD8120CC917D00ED9A50 /* SiteMapTypes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SiteMapTypes.plist; sourceTree = "<group>"; };
+		DCED25A820CC43410015A011 /* NavMap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NavMap.plist; sourceTree = "<group>"; };
+		DCED25AA20CC438F0015A011 /* DataReceiverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataReceiverViewController.swift; sourceTree = "<group>"; };
+		DCED25AC20CC439B0015A011 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DCF4CD8120CC917D00ED9A50 /* NavMapTypes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = NavMapTypes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC436AB020CF07E1006924C8 /* CustomDataReceiver */ = {
+			isa = PBXGroup;
+			children = (
+				DC436AA420CF07DD006924C8 /* CustomDataReceiverPresenter.swift */,
+				DC436AA520CF07DD006924C8 /* CustomDataReceiverWorker.swift */,
+				DC436AA620CF07DD006924C8 /* CustomDataReceiverRouter.swift */,
+				DC436AA720CF07DD006924C8 /* CustomDataReceiverModels.swift */,
+				DC436AA820CF07DD006924C8 /* CustomDataReceiverViewController.swift */,
+				DC436AA920CF07DD006924C8 /* CustomDataReceiverInteractor.swift */,
+			);
+			path = CustomDataReceiver;
+			sourceTree = "<group>";
+		};
 		DCE69A9C20B9E0900080C0DF = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +156,9 @@
 				DCE69AAF20B9E0910080C0DF /* Assets.xcassets */,
 				DCE69AB120B9E0910080C0DF /* LaunchScreen.storyboard */,
 				DCE69AB420B9E0910080C0DF /* Info.plist */,
-				DCED25AA20CC438F0015A011 /* HomeViewController.swift */,
-				DCED25AC20CC439B0015A011 /* LoginViewController.swift */,
+				DCED25AC20CC439B0015A011 /* HomeViewController.swift */,
+				DCED25AA20CC438F0015A011 /* DataReceiverViewController.swift */,
+				DC436AB020CF07E1006924C8 /* CustomDataReceiver */,
 				DCF4CD8020CC626900ED9A50 /* SiteMap */,
 			);
 			path = Demo;
@@ -167,9 +193,9 @@
 		DCF4CD8020CC626900ED9A50 /* SiteMap */ = {
 			isa = PBXGroup;
 			children = (
-				DCED25A820CC43410015A011 /* SiteMap.plist */,
-				DCF4CD8120CC917D00ED9A50 /* SiteMapTypes.plist */,
-				DCCB850920CC535600CD73F7 /* MaritimeSiteMap.swift */,
+				DCED25A820CC43410015A011 /* NavMap.plist */,
+				DCF4CD8120CC917D00ED9A50 /* NavMapTypes.plist */,
+				DCCB850920CC535600CD73F7 /* MaritimeNavMap.swift */,
 			);
 			path = SiteMap;
 			sourceTree = "<group>";
@@ -279,10 +305,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF4CD8220CC917D00ED9A50 /* SiteMapTypes.plist in Resources */,
+				DCF4CD8220CC917D00ED9A50 /* NavMapTypes.plist in Resources */,
 				DCE69AB320B9E0910080C0DF /* LaunchScreen.storyboard in Resources */,
 				DCE69AB020B9E0910080C0DF /* Assets.xcassets in Resources */,
-				DCED25A920CC43410015A011 /* SiteMap.plist in Resources */,
+				DCED25A920CC43410015A011 /* NavMap.plist in Resources */,
 				DCE69AAE20B9E0900080C0DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,11 +334,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCED25AD20CC439B0015A011 /* LoginViewController.swift in Sources */,
+				DC436AAC20CF07DD006924C8 /* CustomDataReceiverRouter.swift in Sources */,
+				DCED25AD20CC439B0015A011 /* HomeViewController.swift in Sources */,
+				DC436AAF20CF07DD006924C8 /* CustomDataReceiverInteractor.swift in Sources */,
+				DC436AAE20CF07DD006924C8 /* CustomDataReceiverViewController.swift in Sources */,
 				DCE69AAB20B9E0900080C0DF /* ViewController.swift in Sources */,
+				DC436AAA20CF07DD006924C8 /* CustomDataReceiverPresenter.swift in Sources */,
 				DCE69AA920B9E0900080C0DF /* AppDelegate.swift in Sources */,
-				DCCB850A20CC535600CD73F7 /* MaritimeSiteMap.swift in Sources */,
-				DCED25AB20CC438F0015A011 /* HomeViewController.swift in Sources */,
+				DCCB850A20CC535600CD73F7 /* MaritimeNavMap.swift in Sources */,
+				DCED25AB20CC438F0015A011 /* DataReceiverViewController.swift in Sources */,
+				DC436AAB20CF07DD006924C8 /* CustomDataReceiverWorker.swift in Sources */,
+				DC436AAD20CF07DD006924C8 /* CustomDataReceiverModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

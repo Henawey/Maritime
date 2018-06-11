@@ -9,10 +9,15 @@
 import UIKit
 import Maritime
 
-class HomeViewController: UIViewController {
+class DataReceiverViewController: UIViewController {
+    @IBOutlet weak var receivedDataLabel: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        receivedDataLabel.text = dataPassedFromHomeScreen
+    }
     
-    @IBAction func loginTouchUpInside(_ sender: UIButton) {
-        navigate(navigator: .dataReceiver(dataPassedFromHomeScreen: "Home Data"))
+    @IBAction func nextTouchUpInside(_ sender: UIButton) {
+        navigate(navigator: .customDataReceiver(selectedItemTitle: "Data Receiver Data"))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
